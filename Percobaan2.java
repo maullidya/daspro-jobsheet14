@@ -7,6 +7,12 @@ public class Percobaan2 {
             return (x * hitungPangkat(x, y - 1));
         }
     }
+    static void cetakDeret(int x, int y) {
+        for (int i = 0; i < y; i++) {
+            System.out.print(x + "x");
+        }
+        System.out.print("1");
+    }
    public static void main(String[] args) {
      Scanner sc = new Scanner(System.in);
      System.out.println("Bilangan yang dihitung: ");
@@ -14,6 +20,7 @@ public class Percobaan2 {
      System.out.println("Pangkat: ");
      int pangkat = sc.nextInt();
      System.out.println(hitungPangkat(bilangan, pangkat));
+     cetakDeret(bilangan, pangkat);
    }
     
 }
